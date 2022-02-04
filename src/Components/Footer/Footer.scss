@@ -1,0 +1,11 @@
+@import '../common/adaptiveMixin.scss';
+
+.footer{
+    background-color: #d5d7d2;
+    text-align: center;
+    @include adaptiveFontSize(15,18);
+    @include adaptivePaddingTop(35,50);
+    @include adaptivePaddingBottom(30,40);
+    font-weight: 300;
+    color:black;
+}

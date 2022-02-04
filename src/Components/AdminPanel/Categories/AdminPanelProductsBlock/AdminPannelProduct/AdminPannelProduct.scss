@@ -1,0 +1,11 @@
+@import '../../../../common/adaptiveMixin.scss';
+
+.product{
+    background-color: #d5d7d2;
+    font-weight: 300;
+    @include adaptiveFontSize(15,18);
+    img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

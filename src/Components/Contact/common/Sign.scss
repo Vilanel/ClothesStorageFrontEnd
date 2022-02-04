@@ -1,0 +1,17 @@
+@import '../../common/adaptiveMixin.scss';
+
+.contact{
+    &__sign{
+        @include adaptiveMarginTop(40,50);
+        @include adaptivePadding(15,35);
+        @media (max-width: 1000px){
+            margin-top: 0px;
+        }  
+        @media (max-width: 767px){
+            padding-left:10%;
+        }
+    }
+    &__button-box{
+        margin-top:20px;
+    }
+}

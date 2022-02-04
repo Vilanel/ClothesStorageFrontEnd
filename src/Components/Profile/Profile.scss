@@ -1,0 +1,46 @@
+@import "../common/adaptiveMixin.scss";
+
+.profile{
+    @include adaptiveFontSize(15,18);
+    min-height:410px;
+    background-color:#d5d7d2;
+    text-align: center;
+    padding-top:30px;
+    &__basketProducts{
+        margin-top:30px;
+        @include adaptiveMarginLeftRight(10,40);
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        grid-gap: calc(20px + 50 * (100vw / 1349));
+        @media (max-width: 1080px){
+            grid-template-columns:1fr 1fr 1fr;
+        }
+        @media (max-width: 761px){
+            grid-template-columns:1fr 1fr;
+        }
+        @media (max-width: 465px){
+            grid-template-columns:1fr;
+        }
+    }
+    &__titleBlock{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        margin-left:calc(60px + 3 * (100vw / 1349));
+        @media (max-width: 250px){
+            margin-left:36px;
+        }
+    }
+    &__title{
+        display:flex;
+        justify-content:right;
+    }
+    &__iconBlock{
+        display:flex;
+        justify-content:left;
+        padding-top: calc(15px + 10 * (100vw / 1349));
+        padding-left: calc(5px + 5 * (100vw / 1349));
+    }
+    &__icon{
+        height: calc(30px + 10 * (100vw / 1349));
+    }
+}

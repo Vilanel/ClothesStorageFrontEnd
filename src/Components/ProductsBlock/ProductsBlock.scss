@@ -1,0 +1,13 @@
+.shop{
+    background-color:#d5d7d2;
+    text-align: center;   
+    &__products-box{
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: calc(20px + 70 * (100vw / 1349));
+        @media (max-width: 700px){
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}

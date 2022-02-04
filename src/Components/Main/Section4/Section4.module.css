@@ -1,0 +1,14 @@
+.fourthSection{
+    background-color: #d5d7d2;
+    padding-top: 30px;
+    display:flex;
+    justify-content: center;
+}
+.fourthSection__carousel{
+    width:70%;
+}
+@media (max-width: 767px){
+    .fourthSection__carousel{
+        width:90%;
+    }
+}

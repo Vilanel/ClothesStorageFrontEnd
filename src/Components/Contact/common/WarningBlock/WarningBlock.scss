@@ -1,0 +1,11 @@
+.warningBlock{
+    background-color: #b2b4b8;
+    border:1px solid #a9aaac;
+    color:#343438;
+    padding: 5px;
+    width:95%;
+    margin-top: 15px;
+    @media (max-width: 1000px){
+        width:98%;
+    }
+}

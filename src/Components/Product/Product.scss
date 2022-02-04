@@ -1,0 +1,15 @@
+@import '../common/adaptiveMixin.scss';
+
+.product{
+    background-color: #d5d7d2;
+    font-weight: 300;
+    @include adaptiveFontSize(15,18);
+    img {
+        width: 100%;
+        transition: 0.7s; 
+        margin-bottom: 20px;
+        &:hover{
+            transform: scale(1.1); /* Збільшуєм масштаб */
+        }
+    }
+}

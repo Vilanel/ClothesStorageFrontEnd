@@ -1,0 +1,74 @@
+@import '../../../../common/adaptiveMixin.scss';
+
+.admin-product-info{
+    background-color: #d7d5d2;
+    @include adaptiveFontSize(15,18);
+    font-weight: 300;
+    padding-top: 40px;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    @media (max-width: 767px){
+        grid-template-columns: 1fr;
+    }
+    &__img-box{
+        height:400px;
+        @include adaptiveMarginLeftRight(20,25);
+        @media (max-width: 1200px){
+            height:320px;
+        }
+        @media (max-width: 1000px){
+            height:300px;
+        }
+        @media (max-width: 900px){
+            height:250px;
+        }
+        @media (max-width: 767px){
+            height:500px;
+        }
+        @media (max-width: 500px){
+            height:400px;
+        }
+        @media (max-width: 400px){
+            height:300px;
+        }
+        @media (max-width: 300px){
+            height:200px;
+        }
+    }
+    &__editimg-button-box{
+        @include adaptiveMarginLeftRight(20,25);
+        &__input{
+            width:100%;
+        }
+        &__label{
+            font-weight: 400;
+        }
+    }
+    &__info-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left:calc(20px + 5 * (100vw / 1349));
+        @media (max-width: 767px){
+            grid-template-columns: 1fr;
+            text-align: center;
+            padding:calc(20px + (5 + 5 * 0.7) * ((100vw - 320px) / 1349));
+        }
+    }
+    &__info-box-first-section{
+        textarea,input{
+            width:90%;
+        }
+    }
+    &__options{
+        padding-left:calc(50px + 5 * (100vw / 1349));
+        padding-right:calc(20px + 5 * (100vw / 1349));
+        @media (max-width: 767px){
+            padding-left:0px;
+        }
+    }
+    &__count-input{
+        height: calc(20px + 5 * (100vw / 1349));
+        margin-top:6px;
+        padding:4px;
+    }
+}

@@ -1,0 +1,8 @@
+@import "../../common/adaptiveMixin.scss";
+
+.filter{
+    @include adaptiveFontSize(15,18);
+    background-color:#d5d7d2;
+    padding-top:30px;
+    margin-left:calc(60px + 3 * (100vw / 1349));
+}

@@ -1,0 +1,18 @@
+@import '../../common/adaptiveMixin.scss';
+
+.contact{
+    background-color: #d5d7d2;
+    display:grid;
+    grid-template-columns: 3fr 2fr;
+    min-height: 400px;
+    @media (max-width: 1000px){
+        grid-template-columns: 1fr;
+    }
+    &__info{
+        @include adaptiveMarginTop(80,90);
+        text-align: center;
+        @media (max-width: 1000px){
+            margin-top: 0px;
+        }
+    }
+}

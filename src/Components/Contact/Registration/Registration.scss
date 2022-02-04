@@ -1,0 +1,40 @@
+@import '../../common/adaptiveMixin.scss';
+
+.contact{
+    input{
+        width:95%;
+        height: 40px;
+        @media (max-width: 1000px){
+            width:98%;
+        }
+    }
+    label{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }                    
+    &__registration{
+        @include adaptivePadding(15,35);
+        @media (max-width: 767px){
+            padding-left:10%;
+        }
+    }
+    &__input-box{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        @media (max-width: 350px){
+            grid-template-columns: 1fr;
+        }
+    }
+    &__input-small{
+        width:94%;
+        @media (max-width: 1000px){
+            width:98%;
+        }
+        @media (max-width: 350px){
+            width:100%;
+        }
+    }
+    &__button-box{
+        margin-top:20px;
+    }
+}

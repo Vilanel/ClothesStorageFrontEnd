@@ -1,0 +1,18 @@
+@import '../common/adaptiveMixin.scss';
+
+.header{
+    background-color: #d5d7d2;
+    text-align: center;
+    @include adaptivePaddingTop(15,35);
+    @include adaptivePaddingBottom(5,15);
+}
+.mainLink{
+    @include adaptiveFontSize(30,40);
+    text-decoration: none;
+    color:black;
+    font-weight: 300;
+    &:hover{
+        font-weight: 400;
+        color:black;
+    }
+}

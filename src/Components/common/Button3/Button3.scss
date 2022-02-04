@@ -1,0 +1,29 @@
+@import "../adaptiveMixin.scss";
+
+.button3 {
+    @include adaptiveFontSize(13,16);
+    display: block;	
+    outline: none;
+    max-width: 200px;
+    border: none;  
+    line-height: 30px;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+    background-color: #c7c9ce;
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
+    border: 1px solid #b2b4b8;
+    margin-bottom: 7px;
+    &:hover {
+        background-color: #a9aaac;
+    }
+    &:active {
+        transform: scale(0.96);
+    }
+    &:disabled {
+        background-color: #a9aaac;
+    }
+}

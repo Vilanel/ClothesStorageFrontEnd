@@ -1,0 +1,22 @@
+@import '../../common/adaptiveMixin.scss';
+
+.trird-section{
+    background-color: #d5d7d2;
+    text-align: center;
+    color:black;
+    &__description-box{
+        display:flex;
+        justify-content:center;
+    }
+    &__description{
+        width:60%;
+        text-decoration: none;
+        color:black;
+        font-weight: 300;
+        @include adaptiveFontSize(15,18);
+        text-align:center;
+        @media (max-width: 767px){
+            width:90%;
+        }
+    }
+}

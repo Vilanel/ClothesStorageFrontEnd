@@ -1,0 +1,76 @@
+@import "../common/adaptiveMixin.scss";
+
+.admin-panel{
+    background-color: #d5d7d2;
+    text-align: center;
+    color:black;
+    padding-left: 40px;
+    padding-right: 40px;
+    color:black;
+    font-weight: 300;
+    min-height:70vh;
+    @include adaptiveFontSize(15,18);
+    &__get-users{
+        overflow-x:auto;
+        display:flex;
+        justify-content:center;
+        align-content: center;
+    }
+    &__get-categories{
+        display:grid;
+        grid-template-columns:1fr;
+    }
+    &__add-category{
+        font-weight: 400;
+    }
+    &__delete-category{
+        overflow-x:auto;
+        display:flex;
+        justify-content:center;
+        align-content: center;
+    }
+    &__add-product-link{
+        color:black;
+        font-weight: 300;
+        text-decoration:none;
+        @include adaptiveFontSize(15,18);
+        display: inline-block;	
+        box-sizing: border-box;
+        padding: 0 20px;
+        margin: 0 15px 15px 0;
+        outline: none;
+        border: none;  
+        border-radius: 6px;
+        height: 40px;
+        line-height: 40px;
+        font-weight: 300;
+        text-decoration: none;
+        color: black;
+        background-color: #b2b4b8;
+        cursor: pointer;
+        user-select: none;
+        appearance: none;
+        touch-action: manipulation;
+        border: 1px solid #b2b4b8;
+        &:hover {
+            color:black;
+            background-color: #a9aaac;
+        }
+    }
+    table{
+        margin-top: 20px;
+    }
+    th{
+        font-weight: 400;
+        @include adaptiveFontSize(15,18);
+        padding: 10px;
+        border:1px solid #7d7e80;
+    }
+    td{
+        font-weight: 300;
+        @include adaptiveFontSize(15,18);
+        padding: 5px;
+        border:1px solid #7d7e80;
+    }
+    
+}

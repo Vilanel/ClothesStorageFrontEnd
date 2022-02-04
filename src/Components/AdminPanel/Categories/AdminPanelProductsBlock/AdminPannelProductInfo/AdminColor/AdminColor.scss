@@ -1,0 +1,35 @@
+@import '../../../../../common/adaptiveMixin.scss';
+
+.admin-color-button{
+    @include adaptiveWidthHeight(20,25);
+    background-color:#6e903b;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.admin-color-button-delete{
+    @include adaptiveFontSize(12,14);	
+    outline: none;
+    margin-left:8px;
+    border: none;  
+    border-radius: 6px;
+    height: 40px;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+    background-color: #b2b4b8;
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
+    border: 1px solid #b2b4b8;
+    &:hover {
+        background-color: #a9aaac;
+    }
+    &:active {
+        transform: scale(0.96);
+    }
+    &:disabled {
+        background-color: #a9aaac;
+    }
+}

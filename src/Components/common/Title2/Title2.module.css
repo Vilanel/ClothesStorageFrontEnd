@@ -1,0 +1,12 @@
+.title{
+    font-size: calc(15px + 3 * (100vw / 1349));
+    font-weight: 500;
+}
+.title:hover{
+    background-color:rgb(197, 199, 193);
+}
+@media (max-width: 767px){
+    .title{
+        font-size: calc(15px + (3 + 3 * 0.7) * ((100vw - 320px) / 1349));
+    }
+}

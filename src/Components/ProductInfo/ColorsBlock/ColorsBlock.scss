@@ -1,0 +1,9 @@
+@import '../../common/adaptiveMixin.scss';
+
+.color-button{
+    @include adaptiveWidthHeight(20,25);
+    background-color:#6e903b;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
